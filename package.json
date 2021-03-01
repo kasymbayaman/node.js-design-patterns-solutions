@@ -1,0 +1,8 @@
+{
+  "name": "node.js-design-patterns-solutions",
+  "version": "1.0.0",
+  "main": "index.js",
+  "author": "Baiaman Kasymbaev",
+  "license": "MIT",
+  "type": "module"
+}
