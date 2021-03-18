@@ -17,12 +17,11 @@ function listNestedFiles(dirPath, cb) {
     } else {
       for (const file of files) {
         result.runningOps++;
-        readDirectory(path.join(dirPath, file), cb);
+        listNestedFiles(path.join(dirPath, file), cb);
       }
     }
 
     result.runningOps--;
-
     process.nextTick(() => {
       if (!result.runningOps) return cb(null, result.fileList);
     });
