@@ -4,5 +4,11 @@
   "main": "index.js",
   "author": "Baiaman Kasymbaev",
   "license": "MIT",
-  "type": "module"
+  "type": "module",
+  "dependencies": {
+    "chalk": "^5.0.0",
+    "csv-parse": "^5.0.3",
+    "split2": "^4.1.0"
+  },
+  "module": "es6"
 }
